@@ -100,23 +100,30 @@ section {
 /* Section content layout */
 .section-content {
     display: flex;
-    align-items: center;
+    align-items: stretch;
 }
 
-.image-container {
-    flex: 0 0 auto;
-    margin-right: 20px;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.text-content {
+.service {
     flex: 1;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.service .image-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.service .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service .text-content {
+    padding: 20px;
 }
 
 /* Content block styling */
