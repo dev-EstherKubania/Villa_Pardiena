@@ -113,7 +113,7 @@ section {
 }
 
 .service .image-container {
-    height: 200px; /* Fixed height */
+    height: 300px; /* Fixed height */
     overflow: hidden;
 }
 
