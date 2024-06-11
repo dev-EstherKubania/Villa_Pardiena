@@ -1,0 +1,208 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #bdc3c7;
+}
+
+/* Hero section styling */
+#hero {
+    background-image: url('images/spa.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#hero h1 {
+    font-size: 48px;
+    z-index: 1;
+    position: relative;
+}
+
+#bookNow {
+    background-color: #e74c3c;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+    border-radius: 5px;
+}
+
+#bookNow:hover {
+    background-color: #c0392b;
+}
+
+/* Section styling */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h1, #about h1, #testimonials h2, #gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#services h2, #about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+#services, #about, #testimonials, #gallery {
+    background-color: #ecf0f1;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about p, #services p, #services ul, .testimonial p {
+    margin: 10px 0;
+    text-align: left;
+}
+
+#services ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+#services ul li {
+    margin-bottom: 10px;
+}
+
+#services strong {
+    color: #2c3e50;
+}
+
+/* Testimonials styling */
+#testimonials .testimonial {
+    margin-bottom: 20px;
+}
+
+#testimonials .testimonial p {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery styling */
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #bookNow {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    #services h1, #about h1, #testimonials h2, #gallery h2 {
+        font-size: 28px;
+    }
+
+    #services h2, #about h2 {
+        font-size: 20px;
+    }
+}
