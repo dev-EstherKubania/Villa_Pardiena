@@ -112,7 +112,7 @@ section {
 }
 
 .service .image-container {
-    height: 200px; /* Fixed height */
+    height: 300px; /* Fixed height */
     overflow: hidden;
 }
 
@@ -134,6 +134,15 @@ section {
 /* Testimonials styling */
 #testimonials .testimonial {
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#testimonials .testimonial img {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 20px;
 }
 
 #testimonials .testimonial p {
@@ -141,7 +150,9 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
+
 
 /* Gallery styling */
 #gallery {
