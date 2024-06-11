@@ -50,7 +50,7 @@ nav ul li a:hover {
 /* Hero section styling */
 #hero {
     background-image: url('images/spa.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
@@ -133,10 +133,19 @@ section {
 }
 
 /* Testimonials styling */
+#testimonials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #testimonials .testimonial {
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
+    width: calc(50% - 20px); /* Adjust as needed */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
 }
 
 #testimonials .testimonial img {
@@ -144,6 +153,7 @@ section {
     height: 100px; /* Adjust as needed */
     border-radius: 50%; /* Makes the image circular */
     margin-right: 20px;
+}
 
 #testimonials .testimonial p {
     background-color: #fff;
