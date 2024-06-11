@@ -50,7 +50,8 @@ nav ul li a:hover {
 /* Hero section styling */
 #hero {
     background-image: url('images/spa.jpg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     color: #fff;
     text-align: center;
@@ -174,4 +175,15 @@ footer {
 
 footer p {
     margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #hero {
+        background-size: cover;
+    }
+
+    .service {
+        margin-bottom: 20px;
+    }
 }
