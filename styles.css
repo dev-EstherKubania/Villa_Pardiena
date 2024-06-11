@@ -176,7 +176,7 @@ footer p {
     margin: 10px 0;
 }
 
-/* Responsive design */
+/* /* Responsive design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -203,7 +203,7 @@ footer p {
     section {
         padding: 40px 10px;
     }
-
+ */
     #services h1, #about h1, #testimonials h2, #gallery h2 {
         font-size: 28px;
     }
